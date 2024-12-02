@@ -32,7 +32,7 @@ export const addUser = (req, res) => {
 
 export const updateUser = (req, res) => {
   const q =
-    "UPDATE usuarios SET `nome` = ?, `email` = ?, `fone` = ?, `data_nascimento` = ?, `cpf` = ?, `curso` = ? WHERE `id` = ?";
+    "UPDATE alunos SET `nome` = ?, `email` = ?, `fone` = ?, `data_nascimento` = ?, `cpf` = ?, `curso` = ? WHERE `id` = ?";
 
   const values = [
     req.body.nome,
